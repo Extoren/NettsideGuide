@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Språk satt til Engelsk -->
+<head>
+<meta charset="UTF-8"> <!-- Setter tegnsettet til UTF-8 for å støtte en bredt spekter av tegn fra ulike språk -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Definerer visningsinnstillinger for enheter med ulike skjermstørrelser -->
+<title>Lister og Tabeller Styling</title> <!-- Tittel -->
+<style>
+  /* CSS for uordnet liste med sirkel-bullet */
+  .circle-list {
+    list-style-type: circle;
+  }
+
+  /* CSS for ordnet liste med romertall */
+  .roman-list {
+    list-style-type: upper-roman;
+  }
+
+  /* CSS for bordet tabell */
+  .bordered-table {
+    border-collapse: collapse;
+  }
+
+  .bordered-table th, .bordered-table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  /* CSS for stripet tabell */
+  .striped-table {
+    border-collapse: collapse;
+  }
+
+  .striped-table th, .striped-table td {
+    padding: 8px;
+  }
+
+  .striped-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<!-- Uordnet Liste med Sirkel-bullet -->
+<h2>Uordnet Liste med Sirkel-bullet</h2>
+<ul class="circle-list">
+  <li>Element 1</li>
+  <li>Element 2</li>
+  <li>Element 3</li>
+</ul>
+
+<!-- Ordnet Liste med Romertall -->
+<h2>Ordnet Liste med Romertall</h2>
+<ol class="roman-list">
+  <li>Element 1</li>
+  <li>Element 2</li>
+  <li>Element 3</li>
+</ol>
+
+<!-- Bordet Tabell -->
+<h2>Bordet Tabell</h2>
+<table class="bordered-table">
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+  <tr>
+    <td>Data 3</td>
+    <td>Data 4</td>
+  </tr>
+</table>
+
+<!-- Stripet Tabell -->
+<h2>Stripet Tabell</h2>
+<table class="striped-table">
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+  <tr>
+    <td>Data 3</td>
+    <td>Data 4</td>
+  </tr>
+</table>
+
+</body>
+</html>

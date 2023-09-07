@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Eksempel</title>
+    <style>
+        /* Stil for relativ container */
+        .relative-container {
+            position: relative; /* Gjør til relativt plassert */
+            border: 1px solid #000; /* Legger en svart kant for synlighet */
+            height: 100px; /* Sett høyde */
+            width: 100px; /* Sett bredde */
+        }
+        
+        /* Stil for relativt plassert element inni relativ container */
+        .relative-element {
+            position: relative; /* Gjør til relativt plassert */
+            top: 20px; /* Flytt 20 piksler nedover */
+            left: 30px; /* Flytt 30 piksler til høyre */
+            background-color: #FFD700; /* Sett bakgrunnsfarge til gull */
+        }
+
+        /* Stil for relativ container for absolutt plassert element */
+        .absolute-container {
+            position: relative; /* Gjør til relativt plassert for å gi referansepunkt for det absolutt plasserte elementet */
+            border: 1px solid #000; /* Legger til svart kant for synlighet */
+            height: 100px; /* Sett høyde */
+            width: 100px; /* Sett bredde */
+            margin-top: 20px; /* Legger til margin på toppen for å skille fra forrige element */
+        }
+        
+        /* Stil for absolutt plassert element inni relativ container */
+        .absolute-element {
+            position: absolute; /* Gjør til absolutt plassert */
+            top: 50px; /* Plasserer 50 piksler fra toppen av relativ container */
+            left: 50px; /* Plasserer 50 piksler fra venstre av relativ container */
+            background-color: #00FF00; /* Setter bakgrunnsfarge til grønn */
+        }
+
+        /* Stil for fast plassert element */
+        .fixed-element {
+            position: fixed; /* Gjør til fast plassert */
+            top: 10px; /* Plasserer 10 piksler fra toppen av visningsvinduet */
+            right: 10px; /* Plasserer 10 piksler fra høyre av visningsvinduet */
+            background-color: #FF4500; /* Setter bakgrunnsfarge til oransje */
+        }
+    </style>
+</head>
+<body>
+    <!-- Relativ container med relativt plassert element -->
+    <div class="relative-container">
+        <div class="relative-element">Relativ Posisjonering</div>
+    </div>
+
+    <!-- Relativ container med absolutt plassert element -->
+    <div class="absolute-container">
+        <div class="absolute-element">Absolutt Posisjonering</div>
+    </div>
+
+    <!-- Fast plassert element -->
+    <div class="fixed-element">Fast Posisjonering</div>
+</body>
+</html>

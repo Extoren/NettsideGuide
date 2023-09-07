@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Språk satt til Engelsk -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Setter tegnsettet til UTF-8 for å støtte en bredt spekter av tegn fra ulike språk -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Definerer visningsinnstillinger for enheter med ulike skjermstørrelser -->
+    <title>Klikk Teller</title> <!-- Tittel -->
+</head>
+
+<body>
+    <h1>Klikk Teller</h1> <!-- Overskriftsnivå 1 med teksten "Klikk Teller" -->
+    <button id="klikkKnapp">Klikk Meg</button> <!-- En knapp med ID 'klikkKnapp' og teksten "Klikk Meg" -->
+    <p>Antall Klikk: <span id="antallKlikk">0</span></p> <!-- En <p>-tagg som inneholder teksten "Antall Klikk: " og en <span>-tagg med ID 'antallKlikk' som viser antall klikk (starter med 0) -->
+
+
+    <!-- JavaScript-kode -->
+    <script>
+        let klikkTeller = 0; // En JavaScript-variabel 'klikkTeller' som starter med verdien 0
+
+        document.getElementById('klikkKnapp').addEventListener('click', function() { // Legger til en klikk-lytter på knappen med ID 'klikkKnapp
+            klikkTeller++; // Øker 'klikkTeller' med 1 hver gang knappen klikkes
+            document.getElementById('antallKlikk').textContent = klikkTeller; // Oppdaterer innholdet til <span>-taggen med ID 'antallKlikk' til å vise 'klikkTeller
+        });
+
+    </script>
+</body>
+
+</html>

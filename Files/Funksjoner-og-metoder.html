@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkle HTML og JavaScript-eksempler</title>
+</head>
+<body>
+
+    <!-- Eksempel 1: En knapp som kaller en JavaScript-funksjon -->
+    <button onclick="minFunksjon()">Klikk meg</button>
+    
+    <br><br>
+    
+    <!-- Eksempel 2: Et tekstfelt og en knapp som kaller en JavaScript-funksjon -->
+    <input type="text" id="tekstfelt">
+    <button onclick="hentVerdi()">Hent verdi fra tekstfelt</button>
+    
+    <br><br>
+    
+    <!-- Eksempel 3: Et tekstelement og en knapp som endrer teksten -->
+    <p id="demo">Klikk på knappen for å endre teksten</p>
+    <button onclick="endreTekst()">Endre Tekst</button>
+    
+    <br><br>
+    
+    <!-- Eksempel 4: To tekstfelt og en knapp som legger sammen tallene -->
+    Tall 1: <input type="text" id="tall1">
+    Tall 2: <input type="text" id="tall2">
+    <button onclick="leggSammen()">Legg sammen tallene</button>
+    <div id="resultat"></div>
+    
+    <br><br>
+    
+    <!-- Eksempel 5: Et tekstfelt og en knapp som sjekker alderen -->
+    Alder: <input type="text" id="alder">
+    <button onclick="sjekkAlder()">Sjekk Alder</button>
+
+    <!-- Eksempel 6: Et element som kan skjules eller vises -->
+    <div id="elementID" style="display:none;">
+        Dette elementet er skjult
+    </div>
+
+    
+    <!-- JavaScript-kode -->
+    <script>
+        // Eksempel 1: En enkel funksjon som viser en melding
+        function minFunksjon() {
+            alert("Hei! Dette er en melding.");
+        }
+
+        // Eksempel 2: En funksjon som henter verdien fra et tekstfelt og viser den i en melding
+        function hentVerdi() {
+            var tekstfeltVerdi = document.getElementById("tekstfelt").value;
+            alert("Du skrev: " + tekstfeltVerdi);
+        }
+
+        // Eksempel 3: En funksjon som endrer teksten i et HTML-element
+        function endreTekst() {
+            document.getElementById("demo").innerHTML = "Ny tekst!";
+        }
+
+        // Eksempel 4: En funksjon som legger sammen tall fra to tekstfelt og viser resultatet
+        function leggSammen() {
+            var tall1 = parseInt(document.getElementById("tall1").value);
+            var tall2 = parseInt(document.getElementById("tall2").value);
+            var sum = tall1 + tall2;
+            document.getElementById("resultat").innerHTML = "Sum: " + sum;
+        }
+
+        // Eksempel 5: En funksjon som sjekker alderen og viser en melding basert på resultatet
+        function sjekkAlder() {
+            var alder = document.getElementById("alder").value;
+            if (alder >= 18) {
+                alert("Du er gammel nok!");
+            } else {
+                alert("Du er for ung!");
+            }
+        }
+    </script>
+
+</body>
+</html>

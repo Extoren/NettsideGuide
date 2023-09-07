@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Språk satt til engelsk -->
+<head>
+  <meta charset="UTF-8"> <!-- Setter tegnsettet til UTF-8 for å støtte en bredt spekter av tegn fra ulike språk -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Definerer visningsinnstillinger for enheter med ulike skjermstørrelser -->
+  <title>Enkel Flexbox-layout</title> <!-- Tittel -->
+  <style>
+    .container {
+      display: flex; /* Setter containeren som en flex-boks */
+      justify-content: space-around; /* Rettferdiggjør elementene med lik avstand rundt seg selv */
+      align-items: center; /* Sentrerer elementene vertikalt */
+      height: 100vh; /* Setter høyden til 100% av viewport-høyden */
+    }
+
+    .item {
+      flex: 1; /* La elementene vokse og ta opp like mye tilgjengelig plass */
+      padding: 20px; /* Legger til en avstand rundt elementet */
+      text-align: center; /* Sentrerer teksten horisontalt */
+    }
+
+    .item:nth-child(odd) {
+      background-color: #f0f0f0; /* Gir hvert annet element en lys bakgrunnsfarge for bedre synlighet */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Element 1</div>
+    <div class="item">Element 2</div>
+    <div class="item">Element 3</div>
+  </div>
+</body>
+</html>

@@ -11,7 +11,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 30px;
-  color: var(--clr-amazonitt);
+  color: var(--clr-safir);
   font-size: 35pt;
 }
 
@@ -71,7 +71,7 @@ body {
 .page4 { background: blue; }
  */
 h1 { 
-	color: var(--clr-amazonitt);
+	color: var(--clr-safir);
 	font-family: monospace;
 	width: 250px;
 	background: var(--clr-tekstBoks);
@@ -158,7 +158,7 @@ h3 {
 }
 
 .text p {
-    color: var(--clr-amazonitt);
+    color: var(--clr-safir);
 	font-size: 25pt;
 	padding: 10px;
 	font-family: monospace;
